@@ -1,0 +1,16 @@
+vi:
+  controller:
+    user:
+      flash_success: "Chào mừng đến với Sample App!"
+  user:
+    new:
+      sign_up: "Đăng ký"
+      name: "Họ tên"
+      passowrd: "Mật khẩu"
+      password_confirmation: "Nhập lại mật khẩu"
+      create_account: "Tạo tài khoản"
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
