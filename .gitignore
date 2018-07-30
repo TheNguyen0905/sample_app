@@ -6,6 +6,9 @@
 
 # Ignore bundler config.
 /.bundle
+/.idea
+/test*
+/.idea/*
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
