@@ -1,5 +1,7 @@
 vi:
   controller:
+    session:
+      flash_danger: "Email và mật khẩu không khớp"
     user:
       flash_success: "Chào mừng đến với Sample App!"
   user:
@@ -14,3 +16,18 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng nhập"
+      user: "Người dùng"
+      profile: "Hồ sơ"
+      setting: "Cài đặt"
+      logout: "Đăng xuất"
+      account: "Tài khoản"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      password: "Mật khẩu"
+      logout: "Đăng xuất"
+      new_user: "Người dùng mới"
+      signup: "Đăng ký ngay"
+  shared:
+    error_message:
+      the_form_contains: "Form chứa "
