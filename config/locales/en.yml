@@ -1,5 +1,7 @@
 en:
   controller:
+    session:
+      flash_danger: "Invalid email/password combination"
     user:
       flash_success: "Welcome to the Sample App!"
   user:
@@ -14,3 +16,20 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      user: "User"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      account: "Account"
+  sessions:
+    new:
+      login: "Log in"
+      password: "Password"
+      logout: "Log out"
+      new_user: "New user?"
+      signup: "Sign up now"
+  shared:
+    error_message:
+      the_form_contains: "The form contains"
+
+
