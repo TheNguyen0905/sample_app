@@ -4,6 +4,12 @@ vi:
       flash_danger: "Email và mật khẩu không khớp"
     user:
       flash_success: "Chào mừng đến với Sample App!"
+      flash_update: "Cập nhật thành công"
+      flash_logged_in_user: "Hãy đăng nhập."
+      flash_destroy_s: "Đã xóa người dùng"
+      flash_load_user: "Người dùng không tồn tại"
+      flash_correct_user: "Not correct user"
+      flash_correct_admin: "Not corrcect admin"
   user:
     new:
       sign_up: "Đăng ký"
@@ -11,6 +17,19 @@ vi:
       passowrd: "Mật khẩu"
       password_confirmation: "Nhập lại mật khẩu"
       create_account: "Tạo tài khoản"
+    edit:
+      update_profile: "Chỉnh sửa hồ sơ"
+      edit_user: "Sửa người dùng"
+      name: "Tên"
+      password: "Mật khẩu"
+      password_confirmation: "Nhập lại mật khẩu"
+      save: "Lưu thay đổi"
+      change: "Thay đổi"
+    index:
+      all_user: "Danh sách người dùng"
+    user:
+      delete: "Xóa"
+      confirm: "Bạn chắc chứ?"
   layouts:
     header:
       home: "Trang chủ"
