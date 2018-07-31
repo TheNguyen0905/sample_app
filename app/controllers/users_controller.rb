@@ -9,7 +9,10 @@ class UsersController < ApplicationController
       .per Settings.user_paginate
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.order_by_created_at.page(params[:page])
+      .per Settings.user_post_paginate
+  end
 
   def new
     @user = User.new
@@ -53,17 +56,12 @@ class UsersController < ApplicationController
       :password_confirmation
   end
 
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "controller.user.flash_logged_in_user"
-    redirect_to login_url
-  end
 
   def correct_user
     @user = User.find_by id: params[:id]
+    return if current_user? @user
     flash[:danger] = t "controller.user.flash_not_correct_user"
-    redirect_to root_url unless current_user? @user
+    redirect_to root_url
   end
 
   def admin_user

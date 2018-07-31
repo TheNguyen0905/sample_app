@@ -1,5 +1,11 @@
 vi:
   controller:
+    micropost:
+      created: "Đã tạo bài viết"
+      deleted: "Đã xóa bài viết"
+      can_not_delete: "Không thể xóa bài viết"
+    application:
+      login_user: "Hãy đăng nhập."
     password_reset:
       error_update: "Mật khẩu không được trống"
       success_update: "Đổi mật khẩu thành công"
@@ -13,21 +19,32 @@ vi:
     user:
       flash_success: "Chào mừng đến với Sample App!"
       flash_update: "Cập nhật thành công"
-      flash_logged_in_user: "Hãy đăng nhập."
       flash_destroy_s: "Đã xóa người dùng"
       flash_load_user: "Người dùng không tồn tại"
-      flash_correct_user: "Not correct user"
-      flash_correct_admin: "Not corrcect admin"
+      flash_not_correct_user: "Không phải user"
+      flash_not_correct_admin: "Không phải admin"
       flash_activation: "Hãy kiểm tra email để kích hoạt tài khoản"
     account_acctivations:
       flash_success: "Đã kích hoạt tài hoat"
       flash_invalid: "Invalid activation link"
+  model:
+    user:
+      picture_size: "should be less than 5MB"
   mailer:
     user:
       subject_activation: "Kích hoạt tài khoản"
       greeting: "Xin chào"
       subject_reset: "Đổi mật khẩu"
+
+  micropost:
+    micropost:
+      posted: "Đã đăng"
+      ago: "trước"
+      delete: "Xóa"
+      confirm: "Bạn chắc chứ?"
   user:
+    show:
+      micropost: "Microposts"
     new:
       sign_up: "Đăng ký"
       name: "Họ tên"
@@ -68,6 +85,9 @@ vi:
       remember_mess: "Remember me on this computer"
       forgot_password: "(quên mật khẩu)"
   shared:
+    micropost_form:
+      new_post: "Tạo bài viết mới..."
+      submit_post: "Đăng"
     error_message:
       the_form_contains: "Form chứa "
   user_mailer:
@@ -90,3 +110,11 @@ vi:
       submit: "Lưu lại"
       password: "Mật khẩu"
       password_confirm: "Nhập lại mật khẩu"
+  static_pages:
+    home:
+      wellcome: "Welcome to the Sample App"
+      ruby_on_rails: "Ruby on Rails Tutorial"
+      micro_feed: "Micropost Feed"
+      sign_up: "Đăng ký ngay!"
+      rails_logo: "Rails logo"
+
