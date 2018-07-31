@@ -28,6 +28,8 @@ vi:
       logout: "Đăng xuất"
       new_user: "Người dùng mới"
       signup: "Đăng ký ngay"
+      remember_me: "Remember me"
+      remember_mess: "Remember me on this computer"
   shared:
     error_message:
       the_form_contains: "Form chứa "

@@ -1,7 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-$gray-medium-light: #eaeaea;
+@import "color";
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -147,8 +146,22 @@ aside {
 
 /* forms */
 
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 1px solid $gray-light;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
@@ -159,9 +172,9 @@ input {
 }
 
 #error_explanation {
-  color: red;
+  color: $red-light;
   ul {
-    color: red;
+    color: $red-light;
     margin: 0 0 30px 0;
   }
 }

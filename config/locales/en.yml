@@ -28,6 +28,8 @@ en:
       logout: "Log out"
       new_user: "New user?"
       signup: "Sign up now"
+      remember_me: "Remember me"
+      remember_mess: "Remember me on this computer"
   shared:
     error_message:
       the_form_contains: "The form contains"
