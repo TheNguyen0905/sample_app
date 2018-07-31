@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: %i(show create new)
+  before_action :logged_in_user, except: %i(following followers show create new)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
   before_action :load_user, except: %i(index new create)
@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.order_by_created_at.page(params[:page])
+    @microposts = @user.microposts.lastest.page(params[:page])
       .per Settings.user_post_paginate
   end
 
@@ -47,6 +47,20 @@ class UsersController < ApplicationController
     else
       render :show
     end
+  end
+
+  def following
+    @title = t "controller.user.following_title"
+    @user  = User.find_by id: params[:id]
+    @users = @user.following.page params[:page]
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "controller.user.followers_title"
+    @user  = User.find_by id: params[:id]
+    @users = @user.followers.page params[:page]
+    render "show_follow"
   end
 
   private
