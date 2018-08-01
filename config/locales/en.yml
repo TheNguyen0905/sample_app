@@ -4,6 +4,12 @@ en:
       flash_danger: "Invalid email/password combination"
     user:
       flash_success: "Welcome to the Sample App!"
+      flash_update: "Profile updated"
+      flash_logged_in_user: "Please log in."
+      flash_destroy_s: "User deleted"
+      flash_load_user: "User is not exist"
+      flash_not_correct_user: "Not correct user"
+      flash_not_correct_admin: "Not corrcect admin"
   user:
     new:
       sign_up: "Sign up"
@@ -11,6 +17,19 @@ en:
       passowrd: "password"
       password_confirmation: "Password confirmation"
       create_account: "Create my account"
+    edit:
+      update_profile: "Update your profile"
+      edit_user: "Edit user"
+      name: "Name"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      save: "Save change"
+      change: "Change"
+    index:
+      all_user: "All user"
+    user:
+      delete: "Delete"
+      confirm: "You sure?"
   layouts:
     header:
       home: "Home"
