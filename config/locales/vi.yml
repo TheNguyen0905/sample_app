@@ -1,6 +1,8 @@
 vi:
   controller:
     session:
+      message: "Tài khoản chưa được kích hoạt. "
+      message_plus: "Kiểm tra email để kích hoạt"
       flash_danger: "Email và mật khẩu không khớp"
     user:
       flash_success: "Chào mừng đến với Sample App!"
@@ -10,6 +12,14 @@ vi:
       flash_load_user: "Người dùng không tồn tại"
       flash_correct_user: "Not correct user"
       flash_correct_admin: "Not corrcect admin"
+      flash_activation: "Hãy kiểm tra email để kích hoạt tài khoản"
+    account_acctivations:
+      flash_success: "Đã kích hoạt tài hoat"
+      flash_invalid: "Invalid activation link"
+  mailer:
+    user:
+      subject: "Kích hoạt tài khoản"
+      greeting: "Xin chào"
   user:
     new:
       sign_up: "Đăng ký"
@@ -52,3 +62,10 @@ vi:
   shared:
     error_message:
       the_form_contains: "Form chứa "
+  user_mailer:
+    password_reset_html:
+      title: "Đổi mật khẩu"
+    account_html:
+      greeting: "Xin chào"
+      activation: "Kích hoạt"
+      title: "Sample app"

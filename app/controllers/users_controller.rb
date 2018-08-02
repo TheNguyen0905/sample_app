@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   before_action :load_user, except: %i(index new create)
 
   def index
-    @users = User.page(params[:page]).per Settings.user_paginate
+    @users = User.activated.page(params[:page])
+      .per Settings.user_paginate
   end
 
   def show; end
@@ -17,9 +18,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "controller.user.flash_success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "controller.user.flash_activation"
+      redirect_to root_url
     else
       render :new
     end

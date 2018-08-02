@@ -2,6 +2,8 @@ en:
   controller:
     session:
       flash_danger: "Invalid email/password combination"
+      message: "Account not activated. "
+      message_plus: "Check your email for the activation link."
     user:
       flash_success: "Welcome to the Sample App!"
       flash_update: "Profile updated"
@@ -10,6 +12,14 @@ en:
       flash_load_user: "User is not exist"
       flash_not_correct_user: "Not correct user"
       flash_not_correct_admin: "Not corrcect admin"
+      flash_activation: "Please check your email to activate your account."
+    account_acctivations:
+      flash_success: "Account activated!"
+      flash_invalid: "Invalid activation link"
+  mailer:
+    user:
+      subject: "Account activation"
+      greeting: "Hi"
   user:
     new:
       sign_up: "Sign up"
@@ -52,5 +62,11 @@ en:
   shared:
     error_message:
       the_form_contains: "The form contains"
-
-
+  user_mailer:
+    password_reset_html:
+      title: "Reset Password"
+    account_html:
+      greeting: "Hi"
+      activation: "Activate"
+      title: "Sample app"
+      wellcome: "  Welcome to the Sample App! Click on the link below to activate your account:"
