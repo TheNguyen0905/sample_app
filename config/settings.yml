@@ -5,4 +5,4 @@ email_maximum: 255
 password_minimum: 6
 url_gravatar: "https://secure.gravatar.com/avatar"
 user_paginate: 10
-mail_to: "to@example.org"
+password_reset_expired: 2
