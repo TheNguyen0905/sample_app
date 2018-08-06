@@ -1,6 +1,10 @@
+//= require i18n
+//= require i18n.js
+//= require i18n/translations
 //= require jquery
 //= require bootstrap
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require micropost_form
 //= require_tree .

@@ -4,5 +4,12 @@ name_maximum: 50
 email_maximum: 255
 password_minimum: 6
 url_gravatar: "https://secure.gravatar.com/avatar"
+url_rails: "http://www.railstutorial.org/"
+url_ruby: "http://rubyonrails.org/"
+rails_png: "rails.png"
 user_paginate: 10
 password_reset_expired: 2
+user_post_paginate: 10
+user_feed_paninate: 10
+micropost_content_maximun: 140
+size_image: 5

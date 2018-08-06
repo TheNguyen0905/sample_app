@@ -18,6 +18,9 @@ gem "config"
 gem "jquery-rails", "4.3.1"
 gem "ffaker"
 gem "kaminari"
+gem "carrierwave"
+gem "mini_magick"
+gem "i18n-js"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
