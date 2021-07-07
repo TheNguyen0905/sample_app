@@ -14,8 +14,7 @@ en:
       create_flash_danger: "Email address not found"
     session:
       flash_danger: "Invalid email/password combination"
-      message: "Account not activated. "
-      message_plus: "Check your email for the activation link."
+      message: "Account not activated. Check your email for the activation link."
     user:
       following_title: "Following"
       followers_title: "Followers"
@@ -93,6 +92,9 @@ en:
       remember_mess: "Remember me on this computer"
       forgot_password: "(forgot password)"
   shared:
+    stats:
+     following: "following"
+     followers: "followers"
     micropost_form:
       new_post: "Compose new micropost..."
       submit_post: "Post"
